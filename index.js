@@ -72,7 +72,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // code for the change of backgrounds
 document.addEventListener("DOMContentLoaded", function() {
-    const backgrounds = ['url(images/banner1.jpeg)', 'url(images/banner2.png)', 'url(images/banner3.jpeg)', 'url(images/banner4.jpeg)'];
+    const backgrounds = ['url(images/banner1.webp)', 'url(images/banner2.webp)', 'url(images/banner3.webp)', 'url(images/banner4.jpeg)'];
     const backgroundElement = document.querySelector('.main-content');
     let currentIndex = 0;
 
@@ -91,5 +91,5 @@ document.addEventListener("DOMContentLoaded", function() {
     changeBackground();
 
     // Call the function periodically to change the background
-    setInterval(changeBackground, 5000); // Adjust this interval to control the duration between background changes
+    setInterval(changeBackground, 2000); // Adjust this interval to control the duration between background changes
 });
